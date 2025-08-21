@@ -188,6 +188,12 @@ git commit -m 'commit message' // after staging using add
 git commit -a -m 'commit message' // staging using a and commiting
 git commit -am 'commit message' // staging and committing
 
+git log  # See the history on the repository
+git log --oneline
+git log -<limit>
+git log --author ="name" # To check change by specific user
+git log --graph # Visualize the history
+
 git commit -am "Message" #Grab every thing in the working copy and -a allows to skip the staging copy
 git log  // To see the history on the repository
 git log --author ="name" #To check change by specific user
@@ -196,6 +202,26 @@ git status  //To check changes or status of the file
 
 git diff #Compare workin copy in the repository
 git diff --staged # Compare files in the staging area
+
+git checkout -- filename # To get working copy back
+git reset HEAD filename # Removes from the staging area / (unstage)
+git checkout <branch-name> <path to file> # Checkout file from different branch
+git checkout <commit-id> -- <path to file> # Checkout file from specific commit
+
+git remote -v  # View remote repository-Urls
+git remote add <remote name> repository-Url # Add a new remote
+git push -u remote master # Push the file into github
+git checkout <commit-id> -- filename #
+
+git rm filename1 # Delete one tracked file
+git mv filename1 filename2 # Delete tracked file(s)
+git mv filename1 foldername/filename1 # Move file to a folder
+
+git branch # to list branches
+git branch branch-name # to create a branch
+git checkout branch-name # to checkout to a certain branch
+git checkout -b branch-name # to create a branch and checkout at the same time
+git merge branch-name # to merge a branch to the current branch
 
 git rm filename
 git mv filename1 filename2
